@@ -1,0 +1,46 @@
+#message{
+    background-color: rgb(43,74,100);
+    border: none;
+    color: white;
+}
+
+input[type="submit"]{
+    display: block;
+    background-color: rgb(26,192,86);
+    width: 60px;
+    height: 30px;
+}
+
+label{
+    display: block;
+}
+
+input, select{
+    background-color: rgb(43,74,100);
+    border: none;
+    color: white;
+}
+
+input:hover{
+    background-color: rgb(78,112,140);
+    border: 1px solid white;    
+}
+
+select:hover{
+    background-color: rgb(78,112,140);
+    border: 1px solid white;    
+}
+
+body{
+    margin: 20px;    
+    color: white;    
+}
+
+#form1{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(33, 59, 80);
+    border-radius: 5%;
+}
