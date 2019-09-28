@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.claim{
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    height: 45%;
+}
+
+hr{
+    background-color: #007bff;
+    border: 0;
+    height: 1px;
+    width: 7em;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #007bff;
+    
+}
+
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #007bff;
+    margin: auto;
+    padding: 1.5em 2
+}
+
+header{
+    
+    
+
+}
+
