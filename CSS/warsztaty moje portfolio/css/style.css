@@ -1,13 +1,27 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;    
+}
+
+body{
+    margin: 0px auto;
+    padding: 0px;
     text-align: center;
+    font-size: 10px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .claim{
+    height: 70em;
     background-image: url('../img/header.jpg');
     background-size: cover;
-    height: 45%;
+    background-position: center;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #007bff;
+    padding-top: 5em;
+    font-size: 5em;
 }
 
 hr{
@@ -17,23 +31,116 @@ hr{
     width: 7em;
 }
 
-h1{
-    text-transform: uppercase;
+p{
+    top: 5em;
+    font-size: 2em;
+    color: #333;
+    padding-left: 20em;
+    padding-right: 20em;
+}
+
+span{
     color: #007bff;
-    
 }
 
 .button{
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     border: 1px solid #007bff;
     margin: auto;
-    padding: 1.5em 2
+    padding: 1.5em 2em;
+    color: #333;
+    font-size: 1.5em;
 }
 
-header{
-    
-    
-
+nav{
+    height: 5em;
+    background-color: #007bff;
+    position: sticky;
+    top: 0;
 }
 
+ul{
+    margin: 0;
+}
+
+.menu-item{
+    display: inline-block;
+    padding: 1.2em;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+h2{
+    font-size: 3em;
+    padding-top: 5em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+#foto-about{
+    border-radius: 50%;
+    margin-top: 5em;
+}
+
+#portfolio{
+    background-color: #f2f1ed;
+}
+
+.container-outer{
+    /* max-width: 1170px; */
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-item{
+    position: relative;
+    margin: 0;
+    flex-basis: 25%;
+    height: 20em;
+}
+
+.container-outer .container .container-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-outer .container .container-item h3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 123, 255, 0.75);
+    top: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+    opacity: 0;
+    transition: all 1s;
+    margin: 0;
+    padding: 2em;
+}
+
+.container-outer .container .container-item h3::after{
+    content: "♥";
+    font-size: 1.4em;
+    display: block;
+}
+
+.container-outer .container .container-item h3:hover{
+    opacity: 1;    
+}
