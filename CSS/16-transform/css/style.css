@@ -24,6 +24,8 @@ img{
     animation-iteration-count: infinite;
 }
 
+
+
 @keyframes testowa{
     0%, 100%{
         /* height: 350px; */
