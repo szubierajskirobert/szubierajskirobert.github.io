@@ -1,0 +1,26 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 400vh;
+    transition: all .6s ease-in-out;
+}
+
+body.scroll{
+    background-color: cadetblue;
+}
+
+body.scroll-2{
+    background-color: green;
+}
+
+h1{
+    transition: all .3s ease-in-out;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 25px;
+    background: rgba(255,255,255,0.6);
+    z-index: 2;
+}

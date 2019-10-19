@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form id="pizzaOrder" action="">
+            <fieldset>
+                <label for="name">Imię:</label>
+                <input type="text" name="name" id="name"><br>
+            </fieldset>
+
+            <fieldset>
+                <label for="surname">Nazwisko:</label>
+                <input type="text" name="surname" id="surname"><br>
+            </fieldset>
+
+            <fieldset>
+                <label for="street">Ulica:</label>
+                <input type="text" name="street" id="street"><br>
+            </fieldset>
+
+            <fieldset>
+                <label for="homeNr">Nr domu/mieszkania:</label>
+                <input type="text" name="homeNr" id="homeNr">
+            </fieldset>
+
+            <fieldset>
+                <label for="code">Kod Pocztowy:</label>
+                <input type="text" name="code" id="code">
+            </fieldset>
+
+            <fieldset>
+                <label for="city">Miasto:</label>
+                <input type="text" name="city" id="city">           
+            </fieldset>
+
+            <fieldset>
+                <label for="pizzaKind">Pizza:</label>
+                    <select name="pizzaKind" id="pizzaKind">
+                        <option value="0">---wybierz pizze---</option>
+                        <option value="1">Margarita</option>
+                        <option value="2">Vega</option>
+                        <option value="3">Hawajska</option>
+                        <option value="4">Serowa</option>
+                    </select>
+            
+            <span id="price" class="price">0 PLN</span>
+            </fieldset>
+
+            <fieldset>       
+                <label for="tomato">Sos pomidorowy</label>
+                <input type="checkbox" name="tomato" id="tomato">
+            </fieldset>
+
+            <fieldset>       
+                <label for="garlic">Sos czosnkowy</label>
+                <input type="checkbox" name="garlic" id="garlic">
+            </fieldset>
+            
+            <fieldset>       
+                <label for="rodo">Zgoda na dane osobowe</label>
+                <input type="checkbox" name="rodo" id="rodo">
+            </fieldset>
+            
+
+            <button id="submit">Wyślij</button>
+            <!-- <input id="submit" type="submit" value="Wyślij"> -->
+
+            <ul id="errors" class="errors"></ul>
+        </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
