@@ -9,7 +9,7 @@ body{
 }
 
 .navbar{
-    background-color: gray;   
+    background-color: #444;   
 }
 
 .right{
@@ -17,8 +17,32 @@ body{
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #888;
 }
 
+.lewy{
+    margin-left: 300px;
+}
 
+.formularz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-color:rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 300px;
+    padding-top: 10px;
+}
 
+.inputy{
+    position: relative;
+    width: 90%;
+    border-radius: 2px;
+    border: none;    
+}
+
+.submit{
+    background-color: tomato;
+    stroke: 0px;
+}

@@ -6,27 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
+    <script src="https://kit.fontawesome.com/75de697617.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <!-- <nav class="justify-content-center">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 item">
-                        <a class="link" href="#">Klub podróżniczy</a>        
-                    </div>        
-                    <div class="col-md-3 item">
-                        <a class="link" href="#">Dołącz do nas</a>        
-                    </div>
-                    <div class="col-md-3 item">
-                        <a class="link" href="#">Inspiracje</a>        
-                    </div>
-                </div>
-            </div>              
-        </nav> -->
-
         <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Klub podróżniczy</a>
+                <a class="navbar-brand lewy" href="#">Klub podróżniczy</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,7 +28,23 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-5 item">
-
+                        <div class="lewy">
+                            <h2>Dołącz do nas</h2><i class="fas fa-pencil-alt"></i>
+                            <p>wypełnij zgłoszenie na członka klubu:</p>
+                            <form class="formularz" action="https://formspree.io/l.badocha@arena108.pl" method="POST">
+                                
+                                <input class="inputy" type="text" value="Imię i nazwisko" name="name">
+                                <br>
+                                <input class="inputy" type="email" value="Email" name="_replyto">
+                                <br>
+                                <input class="inputy" type="tel" value="Telefon" name="phone"> 
+                                <br>
+                                <textarea class="inputy" name="message" value="Kilka słów o sobie"></textarea>
+                                <br>                               
+                                <input class="inputy submit" type="submit" value="Zapisz się!">
+                                <p class="inputy">Wypełniając zgłoszenie wyrażasz zgodę na przetwarzanie danych zgodnie z <span><a href="">polityką prywatności</a></span></p>
+                            </form>
+                        </div>
                     </div>
 
                     <div class="col-md-7 item">
