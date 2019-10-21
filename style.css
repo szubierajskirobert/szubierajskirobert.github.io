@@ -1,0 +1,29 @@
+p:first-child{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.line{
+    margin-top: 30px;
+    background-color: #F8F8F8;
+    width: 200px;
+    height: 2px;
+    margin: auto    
+}
+
+p{
+    color: rgb(141, 141, 141);
+    font-size: 20px;
+}
+
+i{
+    margin-top: 100px;
+    padding-top: 25px;
+    font-size: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    color: #E38F42;
+    text-align: center;
+}
