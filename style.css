@@ -1,6 +1,7 @@
-p:first-child{
+h1{
     margin-top: 50px;
     font-size: 30px;
+    color: rgb(141, 141, 141);
 }
 
 .line{
