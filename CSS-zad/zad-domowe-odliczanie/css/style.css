@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-family: 'verdana';    
+}
+
+.outer{
+    height: 100vh;
+    width: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15vh;
+    position: relative;
+}
+
+.number{
+    top: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+#p10{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#p9{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+#p8{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+#p7{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+}
+
+#p6{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+}
+
+#p5{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+}
+
+#p4{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 6s;
+}
+
+#p3{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 7s;
+}
+
+#p2{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 8s;
+}
+
+#p1{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 9s;
+}
+
+#message1{
+    animation-name: counter;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 10s;
+}
+
+@keyframes counter{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0
+    }
+}
