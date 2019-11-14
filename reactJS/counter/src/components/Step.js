@@ -8,14 +8,14 @@ class Step extends Component{
 
 
     chandleChange = () => {
-        this.props.actionCallback()
+        this.props.actionCallback(this._inputStep.value);
     }
 
     render(){
         return(
             <div>
                 <label>Krok: </label>
-                <input ref={(data) => { this._inputStep = data} } type='number' min='1' onChange={this.chandleChange}></input>
+                <input ref={(data) => {this._inputStep = data} } type='number' min='1' onChange={this.chandleChange.value}/>
             </div>
         );
     }

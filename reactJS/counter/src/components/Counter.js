@@ -17,11 +17,24 @@ export default class Counter extends Component{  //można też dać export tutaj
         }
 
         //to moje próby odwołania się do Step z pliku step
-        // let step = this.props._inputStep.value;
+        let stepValue = (this.props._inputStep === undefined) ? 0 : this.props._inputStep;
 
-        // this.state = {
-        //     Step: step
-        // }
+        // let stepValue = this.props._inputStep;
+
+        // stepValue = 0;
+
+        this.state = {
+            Step: stepValue
+        }
+
+    }
+
+    setStep = () =>{
+        this.setState(() =>{
+            return{
+                Step: this._inputStep.value
+            }
+        });
 
     }
 
@@ -59,7 +72,7 @@ export default class Counter extends Component{  //można też dać export tutaj
                 <ButtonsPanel label="Zwiększ licznik" actionCallback={this.changeValue} />
                 <ButtonsPanel label="Zresetuj licznik" actionCallback={this.resetDozera} />
                 <ButtonsPanel label="Zresetuj do initValue" actionCallback={this.resetDoinit} />
-                <Step />
+                <Step actionCallback={this.setStep}/>
             </div>
         )
     }
