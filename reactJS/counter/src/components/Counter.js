@@ -72,7 +72,6 @@ export default class Counter extends Component{  //można też dać export tutaj
                 <ButtonsPanel label="Zwiększ licznik" actionCallback={this.changeValue} />
                 <ButtonsPanel label="Zresetuj licznik" actionCallback={this.resetDozera} />
                 <ButtonsPanel label="Zresetuj do initValue" actionCallback={this.resetDoinit} />
-                <Step actionCallback={this.setStep}/>
             </div>
         )
     }
