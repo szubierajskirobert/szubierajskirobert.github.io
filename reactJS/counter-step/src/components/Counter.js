@@ -13,36 +13,36 @@ export default class Counter extends Component{  //można też dać export tutaj
 
         // !!! Stan komponentu inicjujemy w konstruktorach
         this.state = {
-            value: iVal
+            value: 0,
+            Step: 1
         }
 
         //to moje próby odwołania się do Step z pliku step
-        let stepValue = (this.props._inputStep === undefined) ? 0 : this.props._inputStep;
+        // let stepValue = (this.props._inputStep === undefined) ? 0 : this.props._inputStep;
 
         // let stepValue = this.props._inputStep;
 
         // stepValue = 0;
 
-        this.state = {
-            Step: stepValue
-        }
 
     }
 
-    setStep = () =>{
+    setStep = (step) =>{
+        // console.log(step);
+        
         this.setState(() =>{
             return{
-                Step: this._inputStep.value
+                Step: step
             }
         });
 
     }
 
-    changeValue = (step) => {
+    changeValue = () => {
         console.log('Wywołuję na click w ButtonsPanel metodę utworzoną w rodzicu (Counter)')
         this.setState((prevState) => {
             return{
-                value: prevState.value + step //próbowałem + step zamiast 1 ale nie działa
+                value: parseInt(prevState.value) + parseInt(this.state.Step) 
             }
         });
     }
@@ -72,7 +72,7 @@ export default class Counter extends Component{  //można też dać export tutaj
                 <ButtonsPanel label="Zwiększ licznik" actionCallback={this.changeValue} />
                 <ButtonsPanel label="Zresetuj licznik" actionCallback={this.resetDozera} />
                 <ButtonsPanel label="Zresetuj do initValue" actionCallback={this.resetDoinit} />
-                <Step actionCallback={this.setStep}/>
+                <Step step={this.state.Step} actionCallback={this.setStep}/>
             </div>
         )
     }

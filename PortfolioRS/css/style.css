@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.col-12{
+    padding: 0;
+    margin: 0;
+}
+
+
+#home{
+    background-image: url('../img/headerbkg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 40vh;
+    height: 100vh;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+#home :first-child{
+    font-size: 9em;
+}
+
+#home :nth-child(2){
+    font-size: 5em;
+}
+
+#home :nth-child(3){
+    font-size: 3em;
+}
+
+.button{
+    display: inline-block;
+    margin-top: 5em;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+    padding: 0.5em 2em;
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: blanchedalmond;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 100;
+}
+
+.nav-link{
+    font-size: 2em;
+    color: black;
+    height: 50px;
+    margin-top: 30px;
+    width: 200px;
+    text-align: center;
+}
+
+.nav-link:hover{
+    background-color: rgb(129, 129, 129);
+    color: white;
+    /* border: 1px solid black; */
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+#about{
+    margin-top: 30px;
+    padding: 100px 100px;
+    /* background-color: rgb(250, 250, 250); */
+    border-top: 1px solid rgb(185, 0, 0);
+}
+
+#intro{
+    font-size: 2em;
+    text-align: justify;
+}
+
+#about > div > :first-child{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+#about > div > :nth-child(2){
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+span{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline;
+    color: rgb(185, 0, 0);
+}
+
+#skills{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(185, 0, 0);
+}
+
+#skills > div > p{
+    margin-top: 50px;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#skills > div > div > div > div > p{
+    color:black;
+    font-size: 3em;
+}
+
+i{
+    margin-top: 100px;
+    padding-top: 25px;
+    font-size: 100px;
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%;
+    background-color: #F8F8F8; */
+    color: rgb(185, 0, 0);
+    text-align: center;
+}
