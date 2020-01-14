@@ -1,0 +1,16 @@
+/* 
+Theme Name:   Twenty Seventeen – motyw potomny
+Template:     twentyseventeen
+*/
+
+body{
+    filter: blur(0px)
+}
+
+body:hover{
+    /* filter: blur(5px) */
+}
+
+.form{
+    padding: 10vw;
+}

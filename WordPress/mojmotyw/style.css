@@ -1,0 +1,25 @@
+/*
+    Theme Name: Mojmotyw
+*/
+/* zmienne w css (nie w sass) */
+:root{
+    --base-background: #ccc;
+    --h1-font-size: 26px;
+}
+
+body{
+    background-color: var(--base-background);
+    font-size: 15px;
+    text-align: center;
+}
+
+h1{
+    font-size: var(--h1-font-size);
+}
+
+@media (max-width: 400px){
+    :root{
+        --base-background: red;
+        --h1-font-size: 12px;
+    }
+}
