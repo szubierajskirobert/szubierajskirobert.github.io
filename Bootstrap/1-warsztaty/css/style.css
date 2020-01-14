@@ -1,3 +1,7 @@
+body{
+    color: white;
+}
+
 #tlo{
     height: 700px;
     background-image: url('../img/form-background.jpg');
