@@ -131,11 +131,11 @@ span{
     font-size: 3em;
 }
 
-i{
+i, svg{
     margin-top: 100px;
     padding-top: 25px;
     font-size: 100px;
-    width: 150px;
+    width: 200px;
     height: 150px;
     /* border-radius: 50%;
     background-color: #F8F8F8; */
