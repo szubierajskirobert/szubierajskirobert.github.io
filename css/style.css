@@ -56,7 +56,7 @@ body{
     transition-duration: 2s;
 }
 
-nav{
+#navi{
     position: sticky;
     top: 0;
     background-color: rgba(255,255,255,0.95);
@@ -99,12 +99,6 @@ nav{
     margin-bottom: 0px;
 }
 
-#about > div > :nth-child(2){
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 span{
     font-size: 1.2em;
     text-transform: uppercase;
@@ -119,21 +113,23 @@ span{
     border-top: 1px solid rgb(185, 0, 0);
 }
 
-#skills > div > p{
-    margin-top: 50px;
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 #skills > div > div > div > div > p{
     color:black;
     font-size: 3em;
 }
 
-i, svg{
+.myTitle{
+    margin-top: 50px;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+    color:black;
+    font-size: 3em;
+}
+
+i, svg, .ico{
     margin-top: 100px;
-    padding-top: 25px;
+    padding-top: 0px;
     font-size: 100px;
     width: 200px;
     height: 150px;
